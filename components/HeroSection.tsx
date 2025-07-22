@@ -8,13 +8,13 @@ const HeroSection = () => {
           {/* Left Content */}
           <div className="space-y-8">
             <div className="grid grid-cols-2">
-            <div className="flex items-center justify-center bg-orange-100 text-orange-800 px-2 rounded-full text-sm font-medium">
-              <span className="text-2xl flex items-center">Know before you go</span>
-            </div>
+              <div className="flex items-center justify-center bg-orange-100 text-orange-800 px-2 rounded-full text-sm font-medium">
+                <span className="text-2xl flex items-center">Know before you go</span>
+              </div>
 
-            <Image src="/earth-icon.png" width={50} height={50} alt="" priority  />
-
+              <Image src="/earth-icon.png" width={50} height={50} alt="" priority />
             </div>
+            
             {/* Main Heading */}
             <div>
               <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight">
@@ -35,32 +35,41 @@ const HeroSection = () => {
           {/* Right Content - Image Gallery */}
           <div className="relative">
             <div className="grid grid-cols-3 gap-4">
-
-                {/* Box1 */}
-              <div className="relative -top-6 h-80 rounded-2xl overflow-hidden border-2 border-yellow-500">
-                <div className="absolute z-10" />
-                <div className="w-full h-full items-center justify-center">
-                  
+              {/* Box1 */}
+              <div className="relative -top-6 h-80 rounded-2xl overflow-hidden border-2 border-yellow-500 group cursor-pointer">
+                <div className="w-full h-full relative overflow-hidden">
+                  <Image 
+                    src="https://cdn.pixabay.com/photo/2016/01/09/18/27/journey-1130732_1280.jpg" 
+                    alt="Travel destination - Mountain landscape"
+                    fill
+                    className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+                  />
                 </div>
               </div>
 
-                {/* Box2 */}
-              <div className="relative h-80 rounded-2xl overflow-hidden border-2 border-yellow-500">
-                <div className="absolute z-10" />
-                <div className="w-full h-full items-center justify-center">
-                  
+              {/* Box2 */}
+              <div className="relative h-80 rounded-2xl overflow-hidden border-2 border-yellow-500 group cursor-pointer">
+                <div className="w-full h-full relative overflow-hidden">
+                  <Image 
+                    src="https://cdn.pixabay.com/photo/2017/12/15/13/51/polynesia-3021072_1280.jpg" 
+                    alt="Travel destination - Tropical beach"
+                    fill
+                    className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+                  />
                 </div>
               </div>
 
-                {/* Box3 */}
-                <div className="relative -bottom-6 h-80 rounded-2xl overflow-hidden border-2 border-yellow-500">
-                <div className="absolute z-10" />
-                <div className="w-full h-full items-center justify-center">
-                  
+              {/* Box3 */}
+              <div className="relative -bottom-6 h-80 rounded-2xl overflow-hidden border-2 border-yellow-500 group cursor-pointer">
+                <div className="w-full h-full relative overflow-hidden">
+                  <Image 
+                    src="https://cdn.pixabay.com/photo/2016/11/08/05/26/woman-1807533_1280.jpg" 
+                    alt="Travel destination - City exploration"
+                    fill
+                    className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+                  />
                 </div>
               </div>
-
-              
             </div>
           </div>
         </div>

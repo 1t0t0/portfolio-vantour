@@ -1,7 +1,7 @@
 // app/page.tsx
+import ContactSection from '@/components/ContactSection';
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
-import ServicesSection from '@/components/ServicesSection';
 
 const Home = () => {
   return (
@@ -9,7 +9,7 @@ const Home = () => {
       <Header />
       <main>
         <HeroSection />
-        <ServicesSection />
+        <ContactSection/>
       </main>
     </div>
   );
