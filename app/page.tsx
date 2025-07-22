@@ -1,5 +1,6 @@
 // app/page.tsx
 import ContactSection from '@/components/ContactSection';
+import FeaturedToursSection from '@/components/FeaturedToursSection';
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 
@@ -10,6 +11,7 @@ const Home = () => {
       <main>
         <HeroSection />
         <ContactSection/>
+        <FeaturedToursSection/>
       </main>
     </div>
   );
