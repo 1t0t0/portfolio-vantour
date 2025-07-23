@@ -3,6 +3,7 @@ import ContactSection from '@/components/ContactSection';
 import FeaturedToursSection from '@/components/FeaturedToursSection';
 import ExperienceSection from '@/components/ExperienceSection';
 import GallerySection from '@/components/GallerySection';
+import TestimonialsSection from '@/components/TestimonialsSection';
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 
@@ -16,6 +17,7 @@ const Home = () => {
         <FeaturedToursSection/>
         <ExperienceSection/>
         <GallerySection/>
+        <TestimonialsSection/>
       </main>
     </div>
   );
