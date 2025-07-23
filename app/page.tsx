@@ -2,6 +2,7 @@
 import ContactSection from '@/components/ContactSection';
 import FeaturedToursSection from '@/components/FeaturedToursSection';
 import ExperienceSection from '@/components/ExperienceSection';
+import GallerySection from '@/components/GallerySection';
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 
@@ -14,6 +15,7 @@ const Home = () => {
         <ContactSection/>
         <FeaturedToursSection/>
         <ExperienceSection/>
+        <GallerySection/>
       </main>
     </div>
   );
