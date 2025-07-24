@@ -1,6 +1,7 @@
 // components/GallerySection.tsx
 'use client';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const GallerySection = () => {
   // Gallery images data
@@ -94,9 +95,11 @@ const GallerySection = () => {
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
               >
-                <img
+                <Image
                   src={image.src}
                   alt={image.alt}
+                  width={320}
+                  height={240}
                   className="w-full h-full object-cover"
                 />
               </motion.div>
@@ -130,9 +133,11 @@ const GallerySection = () => {
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
               >
-                <img
+                <Image
                   src={image.src}
                   alt={image.alt}
+                  width={320}
+                  height={240}
                   className="w-full h-full object-cover"
                 />
               </motion.div>

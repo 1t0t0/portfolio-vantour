@@ -1,6 +1,7 @@
 // components/TestimonialsSection.tsx
 'use client';
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -112,14 +113,16 @@ const TestimonialsSection = () => {
               >
                 {/* Testimonial Text */}
                 <p className="text-gray-600 leading-relaxed mb-8 text-base lg:text-lg">
-                  "{testimonial.testimonial}"
+                  &ldquo;{testimonial.testimonial}&rdquo;
                 </p>
                 
                 {/* Customer Info */}
                 <div className="flex items-center space-x-5">
-                  <img
+                  <Image
                     src={testimonial.image}
                     alt={testimonial.name}
+                    width={64}
+                    height={64}
                     className="w-16 h-16 rounded-full object-cover"
                   />
                   <div>

@@ -1,4 +1,5 @@
 // components/FeaturedToursSection.tsx
+import Image from 'next/image';
 
 const FeaturedToursSection = () => {
   const tours = [
@@ -73,10 +74,11 @@ const FeaturedToursSection = () => {
             {/* Big Ben - London */}
             <div className="group cursor-pointer overflow-hidden rounded-xl relative">
               <div className="w-full h-full relative">
-                <img
+                <Image
                   src={tours[0].image}
                   alt={`${tours[0].destination}, ${tours[0].country}`}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-all duration-300"></div>
                 <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
@@ -93,10 +95,11 @@ const FeaturedToursSection = () => {
             {/* Dubai - UAE */}
             <div className="group cursor-pointer overflow-hidden rounded-xl relative">
               <div className="w-full h-full relative">
-                <img
+                <Image
                   src={tours[3].image}
                   alt={`${tours[3].destination}, ${tours[3].country}`}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-all duration-300"></div>
                 <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
@@ -116,10 +119,11 @@ const FeaturedToursSection = () => {
             {/* Bali - Indonesia (tall card) */}
             <div className="row-span-2 group cursor-pointer overflow-hidden rounded-xl relative">
               <div className="w-full h-full relative">
-                <img
+                <Image
                   src={tours[1].image}
                   alt={`${tours[1].destination}, ${tours[1].country}`}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-all duration-300"></div>
                 <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
@@ -136,10 +140,11 @@ const FeaturedToursSection = () => {
             {/* Phetchabun - Thailand */}
             <div className="group cursor-pointer overflow-hidden rounded-xl relative">
               <div className="w-full h-full relative">
-                <img
+                <Image
                   src={tours[4].image}
                   alt={`${tours[4].destination}, ${tours[4].country}`}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-all duration-300"></div>
                 <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
@@ -159,10 +164,11 @@ const FeaturedToursSection = () => {
             {/* Sydney - Australia (wide card) */}
             <div className="group cursor-pointer overflow-hidden rounded-xl relative">
               <div className="w-full h-full relative">
-                <img
+                <Image
                   src={tours[2].image}
                   alt={`${tours[2].destination}, ${tours[2].country}`}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-all duration-300"></div>
                 <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
@@ -182,10 +188,11 @@ const FeaturedToursSection = () => {
               {/* Wuxi - China */}
               <div className="group cursor-pointer overflow-hidden rounded-xl relative">
                 <div className="w-full h-full relative">
-                  <img
+                  <Image
                     src={tours[6].image}
                     alt={`${tours[6].destination}, ${tours[6].country}`}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-all duration-300"></div>
                   <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center">

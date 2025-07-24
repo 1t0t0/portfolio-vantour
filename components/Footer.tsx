@@ -20,7 +20,7 @@ const Footer = () => {
                 </div>
               </div>
               <p className="text-sm text-gray-500 italic">
-                It's time to travel the world
+                It&apos;s time to travel the world
               </p>
             </div>
             
