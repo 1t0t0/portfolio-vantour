@@ -63,12 +63,13 @@ const ExperienceSection = () => {
               <div className="w-96 h-96 bg-orange-400 rounded-full mx-auto relative overflow-hidden">
                 {/* Main traveler image */}
                 <Image
-                  src="/logo.jpg"
-                  width={1000}
-                  height={1000}
-                  alt="Happy traveler giving thumbs up"
-                  className="absolute inset-0 w-full h-full object-fit rounded-full"
-                />
+  src="/logo.jpg"
+  width={1000}
+  height={1000}
+  alt="Happy traveler giving thumbs up"
+  className="absolute inset-0 w-full h-full object-fit rounded-full"
+  unoptimized
+/>
 
   
               </div>

@@ -12,7 +12,7 @@ const HeroSection = () => {
                 <span className="text-2xl flex items-center">Know before you go</span>
               </div>
 
-              <Image src="/earth-icon.png" width={50} height={50} alt="" priority />
+              <Image src="/earth-icon.png" width={50} height={50} alt="" priority unoptimized />
             </div>
             
             {/* Main Heading */}
