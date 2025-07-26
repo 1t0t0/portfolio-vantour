@@ -3,6 +3,9 @@
 import Image from "next/image";
 
 const ExperienceSection = () => {
+  // เรียกใช้ Environment Variable
+  const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME;
+  
   const stats = [
     {
       number: "12k+",
@@ -17,6 +20,9 @@ const ExperienceSection = () => {
       label: "Year experience"
     }
   ];
+
+  // สร้าง Cloudinary URL - ตอนนี้จะได้ URL ที่ถูกต้องแล้ว
+  const logoImageUrl = `https://res.cloudinary.com/${cloudName}/image/upload/v1753507216/logo_uzqrpw.jpg`;
 
   return (
     <section className="py-20 lg:pt-[10rem] bg-white">
@@ -61,17 +67,15 @@ const ExperienceSection = () => {
             <div className="relative">
               {/* Main circular background */}
               <div className="w-96 h-96 bg-orange-400 rounded-full mx-auto relative overflow-hidden">
-                {/* Main traveler image */}
-              <Image
-                src="/logo.jpg"
-                width={1000}
-                height={1000}
-                alt="Happy traveler giving thumbs up"
-                className="absolute inset-0 w-full h-full object-fit               rounded-full"
-                unoptimized
-              />
-
-  
+                {/* ใช้ Cloudinary URL พร้อม Environment Variable */}
+                <Image
+                  src={logoImageUrl}
+                  width={400}
+                  height={400}
+                  alt="Lambo Car Rental Experience"
+                  className="absolute inset-0 w-full h-full object-cover rounded-full"
+                  priority
+                />
               </div>
               
               {/* Decorative dots */}
