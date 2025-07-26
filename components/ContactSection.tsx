@@ -10,7 +10,7 @@ const ContactSection = () => {
       ),
       title: "WhatsApp",
       description: "Chat with us directly for instant support and quick responses.",
-      link: "https://wa.me/8562077801819?text=สวัสดีครับ%20สนใจสอบถามเรื่องการเช่ารถครับ" // เปลี่ยนเป็นเบอร์ไทย
+      link: "https://wa.me/8562077801819" // เปลี่ยนเป็นเบอร์ไทย
     },
     {
       icon: (

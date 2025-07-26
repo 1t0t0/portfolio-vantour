@@ -13,12 +13,28 @@ const Home = () => {
     <div className="min-h-screen">
       <Header />
       <main className="pt-20">
-        <HeroSection />
-        <ContactSection/>
-        <FeaturedToursSection/>
-        <ExperienceSection/>
-        <GallerySection/>
-        <TestimonialsSection/>
+        {/* Home Section */}
+        <section id="home">
+          <HeroSection />
+        </section>
+
+        {/* Contact Section */}
+        <section id="contact">
+          <ContactSection />
+        </section>
+
+        {/* About Section (Experience + Gallery + Testimonials) */}
+        <section id="about">
+          <ExperienceSection />
+        </section>
+
+        {/* Tours Section */}
+        <section id="tours">
+          <FeaturedToursSection />
+            <GallerySection />
+          <TestimonialsSection />
+        </section>
+        
       </main>
       <Footer />
     </div>

@@ -19,7 +19,7 @@ const ExperienceSection = () => {
   ];
 
   return (
-    <section className="py-24 lg:pt-[20rem] bg-white">
+    <section className="py-20 lg:pt-[10rem] bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
@@ -62,14 +62,14 @@ const ExperienceSection = () => {
               {/* Main circular background */}
               <div className="w-96 h-96 bg-orange-400 rounded-full mx-auto relative overflow-hidden">
                 {/* Main traveler image */}
-                <Image
-  src="/logo.jpg"
-  width={1000}
-  height={1000}
-  alt="Happy traveler giving thumbs up"
-  className="absolute inset-0 w-full h-full object-fit rounded-full"
-  unoptimized
-/>
+              <Image
+                src="/logo.jpg"
+                width={1000}
+                height={1000}
+                alt="Happy traveler giving thumbs up"
+                className="absolute inset-0 w-full h-full object-fit               rounded-full"
+                unoptimized
+              />
 
   
               </div>
