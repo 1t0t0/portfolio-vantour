@@ -8,48 +8,89 @@ const GallerySection = () => {
   const galleryImages = [
     {
       id: 1,
-      src: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop",
+      src: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1753519009/LINE_ALBUM_%E0%BA%AE%E0%BA%B9%E0%BA%9A%E0%BA%88%E0%BA%B2%E0%BA%81_%E0%BA%A5%E0%BA%B9%E0%BA%81%E0%BA%84%E0%BB%89%E0%BA%B2%E0%BA%97%E0%BA%B5%E0%BB%88%E0%BB%80%E0%BA%84%E0%BA%B5%E0%BA%8D%E0%BA%A1%E0%BA%B2%E0%BB%83%E0%BA%8A%E0%BB%89%E0%BA%9A%E0%BB%8D%E0%BA%A5%E0%BA%B4%E0%BA%81%E0%BA%B2%E0%BA%99_Gallery_250726_6_r0gchu.jpg",
       alt: "Mountain landscape"
     },
     {
       id: 2,
-      src: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&h=300&fit=crop",
+      src: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1753519009/LINE_ALBUM_%E0%BA%AE%E0%BA%B9%E0%BA%9A%E0%BA%88%E0%BA%B2%E0%BA%81_%E0%BA%A5%E0%BA%B9%E0%BA%81%E0%BA%84%E0%BB%89%E0%BA%B2%E0%BA%97%E0%BA%B5%E0%BB%88%E0%BB%80%E0%BA%84%E0%BA%B5%E0%BA%8D%E0%BA%A1%E0%BA%B2%E0%BB%83%E0%BA%8A%E0%BB%89%E0%BA%9A%E0%BB%8D%E0%BA%A5%E0%BA%B4%E0%BA%81%E0%BA%B2%E0%BA%99_Gallery_250726_4_b84xek.jpg",
       alt: "Pamukkale thermal pools"
     },
     {
       id: 3,
-      src: "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=400&h=300&fit=crop",
+      src: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1753519009/LINE_ALBUM_%E0%BA%AE%E0%BA%B9%E0%BA%9A%E0%BA%88%E0%BA%B2%E0%BA%81_%E0%BA%A5%E0%BA%B9%E0%BA%81%E0%BA%84%E0%BB%89%E0%BA%B2%E0%BA%97%E0%BA%B5%E0%BB%88%E0%BB%80%E0%BA%84%E0%BA%B5%E0%BA%8D%E0%BA%A1%E0%BA%B2%E0%BB%83%E0%BA%8A%E0%BB%89%E0%BA%9A%E0%BB%8D%E0%BA%A5%E0%BA%B4%E0%BA%81%E0%BA%B2%E0%BA%99_Gallery_250726_2_my7dd7.jpg",
       alt: "Mountain view with person"
     },
     {
       id: 4,
-      src: "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=400&h=300&fit=crop",
+      src: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1753519009/LINE_ALBUM_%E0%BA%AE%E0%BA%B9%E0%BA%9A%E0%BA%88%E0%BA%B2%E0%BA%81_%E0%BA%A5%E0%BA%B9%E0%BA%81%E0%BA%84%E0%BB%89%E0%BA%B2%E0%BA%97%E0%BA%B5%E0%BB%88%E0%BB%80%E0%BA%84%E0%BA%B5%E0%BA%8D%E0%BA%A1%E0%BA%B2%E0%BB%83%E0%BA%8A%E0%BB%89%E0%BA%9A%E0%BB%8D%E0%BA%A5%E0%BA%B4%E0%BA%81%E0%BA%B2%E0%BA%99_Gallery_250726_5_p6jr4r.jpg",
       alt: "Tropical beach with palm"
     },
     {
       id: 5,
-      src: "https://images.unsplash.com/photo-1568454537842-d933259bb258?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      alt: "Mountain hiker"
+      src: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1753519009/LINE_ALBUM_%E0%BA%AE%E0%BA%B9%E0%BA%9A%E0%BA%88%E0%BA%B2%E0%BA%81_%E0%BA%A5%E0%BA%B9%E0%BA%81%E0%BA%84%E0%BB%89%E0%BA%B2%E0%BA%97%E0%BA%B5%E0%BB%88%E0%BB%80%E0%BA%84%E0%BA%B5%E0%BA%8D%E0%BA%A1%E0%BA%B2%E0%BB%83%E0%BA%8A%E0%BB%89%E0%BA%9A%E0%BB%8D%E0%BA%A5%E0%BA%B4%E0%BA%81%E0%BA%B2%E0%BA%99_Gallery_250726_1_lrcokr.jpg",
+      alt: "Beautiful travel destination with scenic views"
     },
     {
       id: 6,
-      src: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&h=300&fit=crop",
+      src: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1753519010/LINE_ALBUM_%E0%BA%AE%E0%BA%B9%E0%BA%9A%E0%BA%88%E0%BA%B2%E0%BA%81_%E0%BA%A5%E0%BA%B9%E0%BA%81%E0%BA%84%E0%BB%89%E0%BA%B2%E0%BA%97%E0%BA%B5%E0%BB%88%E0%BB%80%E0%BA%84%E0%BA%B5%E0%BA%8D%E0%BA%A1%E0%BA%B2%E0%BB%83%E0%BA%8A%E0%BB%89%E0%BA%9A%E0%BB%8D%E0%BA%A5%E0%BA%B4%E0%BA%81%E0%BA%B2%E0%BA%99_Gallery_250726_10_ys11no.jpg",
       alt: "Tropical island resort"
     },
     {
       id: 7,
-      src: "https://images.unsplash.com/photo-1548013146-72479768bada?w=400&h=300&fit=crop",
+      src: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1753519010/LINE_ALBUM_%E0%BA%AE%E0%BA%B9%E0%BA%9A%E0%BA%88%E0%BA%B2%E0%BA%81_%E0%BA%A5%E0%BA%B9%E0%BA%81%E0%BA%84%E0%BB%89%E0%BA%B2%E0%BA%97%E0%BA%B5%E0%BB%88%E0%BB%80%E0%BA%84%E0%BA%B5%E0%BA%8D%E0%BA%A1%E0%BA%B2%E0%BB%83%E0%BA%8A%E0%BB%89%E0%BA%9A%E0%BB%8D%E0%BA%A5%E0%BA%B4%E0%BA%81%E0%BA%B2%E0%BA%99_Gallery_250726_9_wpzmff.jpg",
       alt: "Krakow church with camera"
     },
     {
       id: 8,
-      src: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=300&fit=crop",
+      src: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1753519010/LINE_ALBUM_%E0%BA%AE%E0%BA%B9%E0%BA%9A%E0%BA%88%E0%BA%B2%E0%BA%81_%E0%BA%A5%E0%BA%B9%E0%BA%81%E0%BA%84%E0%BB%89%E0%BA%B2%E0%BA%97%E0%BA%B5%E0%BB%88%E0%BB%80%E0%BA%84%E0%BA%B5%E0%BA%8D%E0%BA%A1%E0%BA%B2%E0%BB%83%E0%BA%8A%E0%BB%89%E0%BA%9A%E0%BB%8D%E0%BA%A5%E0%BA%B4%E0%BA%81%E0%BA%B2%E0%BA%99_Gallery_250726_11_ndtoow.jpg",
       alt: "Limestone karsts and boat"
     },
     {
       id: 9,
-      src: "https://images.unsplash.com/photo-1503435980610-a51f3ddfee50?w=400&h=300&fit=crop",
+      src: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1753519010/LINE_ALBUM_%E0%BA%AE%E0%BA%B9%E0%BA%9A%E0%BA%88%E0%BA%B2%E0%BA%81_%E0%BA%A5%E0%BA%B9%E0%BA%81%E0%BA%84%E0%BB%89%E0%BA%B2%E0%BA%97%E0%BA%B5%E0%BB%88%E0%BB%80%E0%BA%84%E0%BA%B5%E0%BA%8D%E0%BA%A1%E0%BA%B2%E0%BB%83%E0%BA%8A%E0%BB%89%E0%BA%9A%E0%BB%8D%E0%BA%A5%E0%BA%B4%E0%BA%81%E0%BA%B2%E0%BA%99_Gallery_250726_7_pddgtx.jpg",
       alt: "Lagoon landscape"
+    },
+     {
+      id: 10,
+      src: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1753519010/LINE_ALBUM_%E0%BA%AE%E0%BA%B9%E0%BA%9A%E0%BA%88%E0%BA%B2%E0%BA%81_%E0%BA%A5%E0%BA%B9%E0%BA%81%E0%BA%84%E0%BB%89%E0%BA%B2%E0%BA%97%E0%BA%B5%E0%BB%88%E0%BB%80%E0%BA%84%E0%BA%B5%E0%BA%8D%E0%BA%A1%E0%BA%B2%E0%BB%83%E0%BA%8A%E0%BB%89%E0%BA%9A%E0%BB%8D%E0%BA%A5%E0%BA%B4%E0%BA%81%E0%BA%B2%E0%BA%99_Gallery_250726_8_lg0aan.jpg",
+      alt: "Tourist destination with natural scenery"
+    },
+    {
+      id: 11,
+      src: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1753519010/LINE_ALBUM_%E0%BA%AE%E0%BA%B9%E0%BA%9A%E0%BA%88%E0%BA%B2%E0%BA%81_%E0%BA%A5%E0%BA%B9%E0%BA%81%E0%BA%84%E0%BB%89%E0%BA%B2%E0%BA%97%E0%BA%B5%E0%BB%88%E0%BB%80%E0%BA%84%E0%BA%B5%E0%BA%8D%E0%BA%A1%E0%BA%B2%E0%BB%83%E0%BA%8A%E0%BB%89%E0%BA%9A%E0%BB%8D%E0%BA%A5%E0%BA%B4%E0%BA%81%E0%BA%B2%E0%BA%99_Gallery_250726_3_jwummi.jpg",
+      alt: "Travel adventure photography"
+    },
+    {
+      id: 12,
+      src: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1753519011/LINE_ALBUM_%E0%BA%AE%E0%BA%B9%E0%BA%9A%E0%BA%88%E0%BA%B2%E0%BA%81_%E0%BA%A5%E0%BA%B9%E0%BA%81%E0%BA%84%E0%BB%89%E0%BA%B2%E0%BA%97%E0%BA%B5%E0%BB%88%E0%BB%80%E0%BA%84%E0%BA%B5%E0%BA%8D%E0%BA%A1%E0%BA%B2%E0%BB%83%E0%BA%8A%E0%BB%89%E0%BA%9A%E0%BB%8D%E0%BA%A5%E0%BA%B4%E0%BA%81%E0%BA%B2%E0%BA%99_Gallery_250726_16_ldrfuw.jpg",
+      alt: "Memorable tour experience"
+    },
+    {
+      id: 13,
+      src: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1753519011/LINE_ALBUM_%E0%BA%AE%E0%BA%B9%E0%BA%9A%E0%BA%88%E0%BA%B2%E0%BA%81_%E0%BA%A5%E0%BA%B9%E0%BA%81%E0%BA%84%E0%BB%89%E0%BA%B2%E0%BA%97%E0%BA%B5%E0%BB%88%E0%BB%80%E0%BA%84%E0%BA%B5%E0%BA%8D%E0%BA%A1%E0%BA%B2%E0%BB%83%E0%BA%8A%E0%BB%89%E0%BA%9A%E0%BB%8D%E0%BA%A5%E0%BA%B4%E0%BA%81%E0%BA%B2%E0%BA%99_Gallery_250726_14_iyrueb.jpg",
+      alt: "Cultural tourism destination"
+    },
+    {
+      id: 14,
+      src: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1753519011/LINE_ALBUM_%E0%BA%AE%E0%BA%B9%E0%BA%9A%E0%BA%88%E0%BA%B2%E0%BA%81_%E0%BA%A5%E0%BA%B9%E0%BA%81%E0%BA%84%E0%BB%89%E0%BA%B2%E0%BA%97%E0%BA%B5%E0%BB%88%E0%BB%80%E0%BA%84%E0%BA%B5%E0%BA%8D%E0%BA%A1%E0%BA%B2%E0%BB%83%E0%BA%8A%E0%BB%89%E0%BA%9A%E0%BB%8D%E0%BA%A5%E0%BA%B4%E0%BA%81%E0%BA%B2%E0%BA%99_Gallery_250726_12_orjo85.jpg",
+      alt: "Scenic travel photography"
+    }
+    ,
+    {
+      id: 15,
+      src: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1753519011/LINE_ALBUM_%E0%BA%AE%E0%BA%B9%E0%BA%9A%E0%BA%88%E0%BA%B2%E0%BA%81_%E0%BA%A5%E0%BA%B9%E0%BA%81%E0%BA%84%E0%BB%89%E0%BA%B2%E0%BA%97%E0%BA%B5%E0%BB%88%E0%BB%80%E0%BA%84%E0%BA%B5%E0%BA%8D%E0%BA%A1%E0%BA%B2%E0%BB%83%E0%BA%8A%E0%BB%89%E0%BA%9A%E0%BB%8D%E0%BA%A5%E0%BA%B4%E0%BA%81%E0%BA%B2%E0%BA%99_Gallery_250726_13_aow4xb.jpg",
+      alt: "Scenic travel photography"
+    },
+    {
+      id: 16,
+      src: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1753519011/LINE_ALBUM_%E0%BA%AE%E0%BA%B9%E0%BA%9A%E0%BA%88%E0%BA%B2%E0%BA%81_%E0%BA%A5%E0%BA%B9%E0%BA%81%E0%BA%84%E0%BB%89%E0%BA%B2%E0%BA%97%E0%BA%B5%E0%BB%88%E0%BB%80%E0%BA%84%E0%BA%B5%E0%BA%8D%E0%BA%A1%E0%BA%B2%E0%BB%83%E0%BA%8A%E0%BB%89%E0%BA%9A%E0%BB%8D%E0%BA%A5%E0%BA%B4%E0%BA%81%E0%BA%B2%E0%BA%99_Gallery_250726_15_gautby.jpg",
+      alt: "Scenic travel photography"
+    },
+    {
+      id: 17,
+      src: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1753519012/LINE_ALBUM_%E0%BA%AE%E0%BA%B9%E0%BA%9A%E0%BA%88%E0%BA%B2%E0%BA%81_%E0%BA%A5%E0%BA%B9%E0%BA%81%E0%BA%84%E0%BB%89%E0%BA%B2%E0%BA%97%E0%BA%B5%E0%BB%88%E0%BB%80%E0%BA%84%E0%BA%B5%E0%BA%8D%E0%BA%A1%E0%BA%B2%E0%BB%83%E0%BA%8A%E0%BB%89%E0%BA%9A%E0%BB%8D%E0%BA%A5%E0%BA%B4%E0%BA%81%E0%BA%B2%E0%BA%99_Gallery_250726_17_jh71ni.jpg",
+      alt: "Scenic travel photography"
     }
   ];
 
