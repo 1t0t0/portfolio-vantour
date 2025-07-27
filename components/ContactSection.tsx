@@ -10,7 +10,7 @@ const ContactSection = () => {
       ),
       title: "WhatsApp",
       description: "แชตกับเราได้โดยตรงผ่านทางวอทแอพ พร้อมรับการตอบรับอย่างรวดเร็ว",
-      link: "https://wa.me/8562077801819" // เปลี่ยนเป็นเบอร์ไทย
+      link: "https://wa.me/8562077801819"
     },
     {
       icon: (
@@ -42,10 +42,10 @@ const ContactSection = () => {
         <div className="grid lg:grid-cols-4 gap-8 items-start">
           {/* Column 1 - Header */}
           <div className="space-y-4">
-            <p className="text-orange-400 font-medium text-lg italic">
+            <p className="text-orange-400 font-medium text-lg italic font-prompt">
               สนใจติดต่อเราได้ที่
             </p>
-            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 leading-tight">
+            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 leading-tight font-prompt">
               ติดต่อเราผ่านทางโซเชียลมีเดีย
             </h2>
           </div>
@@ -67,10 +67,10 @@ const ContactSection = () => {
                 
                 {/* Content */}
                 <div className="space-y-2">
-                  <h3 className="text-lg font-semibold text-gray-900 group-hover:text-orange-500 transition-colors duration-300">
+                  <h3 className="text-lg font-semibold text-gray-900 group-hover:text-orange-500 transition-colors duration-300 font-prompt">
                     {contact.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed text-sm">
+                  <p className="text-gray-600 leading-relaxed text-sm font-sarabun text-thai-body">
                     {contact.description}
                   </p>
                 </div>

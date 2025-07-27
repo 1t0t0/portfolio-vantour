@@ -1,1 +1,74 @@
 @import "tailwindcss";
+
+/* Thai Font Definitions */
+:root {
+  --font-sarabun: "Sarabun", "TH Sarabun New", sans-serif;
+  --font-prompt: "Prompt", "TH Sarabun New", sans-serif;
+}
+
+/* Base Thai Typography */
+body {
+  font-family: var(--font-sarabun);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Thai text specific styling */
+.font-thai-primary {
+  font-family: var(--font-sarabun);
+}
+
+.font-thai-heading {
+  font-family: var(--font-prompt);
+  font-weight: 600;
+}
+
+/* Custom Thai text classes */
+.text-thai-body {
+  font-family: var(--font-sarabun);
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.text-thai-menu {
+  font-family: var(--font-prompt);
+  font-weight: 500;
+}
+
+.text-thai-title {
+  font-family: var(--font-prompt);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* Responsive Thai font sizes */
+@media (max-width: 640px) {
+  .text-thai-responsive {
+    font-size: 0.95rem;
+  }
+}
+
+@media (min-width: 641px) {
+  .text-thai-responsive {
+    font-size: 1rem;
+  }
+}
+
+/* Smooth font rendering for Thai */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Thai text color optimization */
+.text-thai-dark {
+  color: #1f2937;
+}
+
+.text-thai-medium {
+  color: #4b5563;
+}
+
+.text-thai-light {
+  color: #6b7280;
+}
