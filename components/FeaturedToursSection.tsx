@@ -1,109 +1,8 @@
 // components/FeaturedToursSection.tsx
 'use client';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
 
-// Image Slideshow Component
-const ImageSlideshow = ({ images, destinationName }: { images: string[], destinationName: string }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  // Auto slide every 4 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 4000);
-
-    return () => clearInterval(interval);
-  }, [images.length]);
-
-  const goToSlide = (index: number) => {
-    setCurrentIndex(index);
-  };
-
-  const goToPrevious = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
-  };
-
-  const goToNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
-
-  return (
-    <div className="relative">
-      {/* Main Image Display */}
-      <div className="relative h-80 rounded-lg overflow-hidden bg-gray-200">
-        <Image
-          src={images[currentIndex]}
-          alt={`${destinationName} ${currentIndex + 1}`}
-          fill
-          className="object-cover transition-opacity duration-500"
-        />
-        
-        {/* Navigation Arrows */}
-        <button
-          onClick={goToPrevious}
-          className="absolute left-4 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-black/50 hover:bg-black/70 text-white rounded-full flex items-center justify-center transition-all duration-300"
-        >
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-          </svg>
-        </button>
-        
-        <button
-          onClick={goToNext}
-          className="absolute right-4 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-black/50 hover:bg-black/70 text-white rounded-full flex items-center justify-center transition-all duration-300"
-        >
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
-
-        {/* Image Counter */}
-        <div className="absolute top-4 right-4 bg-black/50 text-white px-3 py-1 rounded-full text-sm">
-          {currentIndex + 1} / {images.length}
-        </div>
-      </div>
-
-      {/* Thumbnail Navigation */}
-      <div className="flex gap-2 mt-4 overflow-x-auto pb-2">
-        {images.map((image, index) => (
-          <button
-            key={index}
-            onClick={() => goToSlide(index)}
-            className={`flex-shrink-0 w-20 h-16 rounded-lg overflow-hidden border-2 transition-all duration-300 ${
-              index === currentIndex 
-                ? 'border-orange-400 ring-2 ring-orange-200' 
-                : 'border-gray-300 hover:border-gray-400'
-            }`}
-          >
-            <Image
-              src={image}
-              alt={`${destinationName} thumbnail ${index + 1}`}
-              width={80}
-              height={64}
-              className="w-full h-full object-cover"
-            />
-          </button>
-        ))}
-      </div>
-
-      {/* Dot Indicators */}
-      <div className="flex justify-center gap-2 mt-4">
-        {images.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => goToSlide(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              index === currentIndex 
-                ? 'bg-orange-400' 
-                : 'bg-gray-300 hover:bg-gray-400'
-            }`}
-          />
-        ))}
-      </div>
-    </div>
-  );
-};
 
 const FeaturedToursSection = () => {
   const [selectedTour, setSelectedTour] = useState<any>(null);
@@ -502,7 +401,7 @@ const FeaturedToursSection = () => {
               {/* Content */}
               <div className="p-6 lg:p-8">
                 {/* Description & Basic Info */}
-<div className="mb-8">
+                <div className="mb-8">
                   <h3 className="text-xl font-bold text-gray-900 mb-3 font-prompt">เกี่ยวกับสถานที่</h3>
                   <p className="text-gray-600 leading-relaxed font-sarabun">
                     {selectedTour.description}
@@ -555,9 +454,9 @@ const FeaturedToursSection = () => {
                       className="flex items-center p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-all duration-300 group"
                     >
                       <div className="w-12 h-12 bg-green-400 rounded-full flex items-center justify-center text-white mr-4 group-hover:scale-110 transition-transform">
-                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M12 2C6.48 2 2 5.85 2 10.5c0 1.49.53 2.87 1.44 4.03L2 20l5.64-1.22C8.84 19.55 10.37 20 12 20c5.52 0 10-3.85 10-8.5S17.52 2 12 2z"/>
-                          <text x="12" y="13" textAnchor="middle" fontSize="6" fill="white" fontFamily="Arial, sans-serif" fontWeight="bold">LINE</text>
+                          <text x="12" y="13" textAnchor="middle" fontSize="6" fill="green" fontFamily="Arial, sans-serif" fontWeight="bold">LINE</text>
                         </svg>
                       </div>
                       <div>
