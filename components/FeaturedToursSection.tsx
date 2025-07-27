@@ -28,7 +28,7 @@ const FeaturedToursSection = () => {
       id: 4,
       destination: "เมืองไชสมบูรณ์",
       country: "ลาว",
-      image: "",
+      image: "https://th.readme.me/f/46497/cover.jpg",
       className: "col-span-1 row-span-1"
     },
     {
