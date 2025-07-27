@@ -9,7 +9,7 @@ const ContactSection = () => {
         </svg>
       ),
       title: "WhatsApp",
-      description: "Chat with us directly for instant support and quick responses.",
+      description: "แชตกับเราได้โดยตรงผ่านทางวอทแอพ พร้อมรับการตอบรับอย่างรวดเร็ว",
       link: "https://wa.me/8562077801819" // เปลี่ยนเป็นเบอร์ไทย
     },
     {
@@ -19,7 +19,7 @@ const ContactSection = () => {
         </svg>
       ),
       title: "Facebook",
-      description: "Follow our page for travel updates and exclusive offers.",
+      description: "ติดตามเพจของเราเพื่อรับข้อมูลอัปเดตการเดินทางและข้อเสนอพิเศษ",
       link: "https://www.facebook.com/share/1GGB4HGpKB/?mibextid=wwXIfr"
     },
     {
@@ -30,7 +30,7 @@ const ContactSection = () => {
         </svg>
       ),
       title: "Line",
-      description: "Quick chat support through Line for immediate assistance.",
+      description: "แชตกับเราได้โดยตรงผ่านทางไลน์ สดวกง่าย และ ตอบกับได้ทันที่",
       link: "line://ti/p/Lambo_0365?text=สวัสดีครับ%20สนใจสอบถามเรื่องการเช่ารถครับ"
     }
   ];
@@ -43,10 +43,10 @@ const ContactSection = () => {
           {/* Column 1 - Header */}
           <div className="space-y-4">
             <p className="text-orange-400 font-medium text-lg italic">
-              Get in touch
+              สนใจติดต่อเราได้ที่
             </p>
             <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 leading-tight">
-              Contact us through social media
+              ติดต่อเราผ่านทางโซเชียลมีเดีย
             </h2>
           </div>
 

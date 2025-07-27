@@ -9,7 +9,7 @@ const HeroSection = () => {
           <div className="space-y-8">
             <div className="grid grid-cols-2">
               <div className="flex items-center justify-center bg-orange-100 text-orange-800 px-2 rounded-full text-sm font-medium">
-                <span className="text-2xl flex items-center">Know before you go</span>
+                <span className="text-2xl flex items-center">เตรียมตัวออกเดินทางได้</span>
               </div>
 
               <Image src="/earth-icon.png" width={50} height={50} alt="" priority unoptimized />
@@ -18,17 +18,16 @@ const HeroSection = () => {
             {/* Main Heading */}
             <div>
               <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight">
-                Traveling opens the door to creating{' '}
-                <span className="text-orange-400">memories</span>
+                การเดินทางเปิดประตูสู่{' '}
+                <span className="text-orange-400">ความทรงจำ</span>
               </h1>
             </div>
 
             {/* Description */}
             <p className="text-lg text-gray-600 leading-relaxed max-w-lg">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam 
-              ipsum nobis asperiores soluta voluptas quas voluptates. Molestae 
-              temporibus dignissimos, animi praesentium molestias perferendis 
-              porro expedita delectus. Soluta natus porro.
+              บริษัทรถเช่าแรมโบ้  พาเที่ยวแบบถูกกฎหมาย
+บริการพาเที่ยวภายในประเทศและนอกประเทศ
+บริการทุกระดับประทับใจ เที่ยวแบบปลอดภัยราคาเป็นกันเอง
             </p>
           </div>
 

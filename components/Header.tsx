@@ -81,7 +81,7 @@ const Header = () => {
                     : 'text-gray-700 hover:text-orange-400 hover:bg-orange-50'
                 }`}
               >
-                Home
+                หน้าหลัก
               </button>
 
               <button 
@@ -92,7 +92,7 @@ const Header = () => {
                     : 'text-gray-700 hover:text-orange-400 hover:bg-orange-50'
                 }`}
               >
-                Contact
+                ติดต่อเรา
               </button>
 
               <button 
@@ -103,7 +103,7 @@ const Header = () => {
                     : 'text-gray-700 hover:text-orange-400 hover:bg-orange-50'
                 }`}
               >
-                About
+                เกี่ยวกับเรา
               </button>
               <button 
                 onClick={() => scrollToSection('tours')}
@@ -113,7 +113,7 @@ const Header = () => {
                     : 'text-gray-700 hover:text-orange-400 hover:bg-orange-50'
                 }`}
               >
-                Tours
+                ทัวร์
               </button>
               
             </nav>
@@ -170,7 +170,7 @@ const Header = () => {
                       : 'bg-gray-100 text-gray-700 hover:bg-orange-400 hover:text-white'
                   }`}
                 >
-                  HOME
+                  หน้าหลัก
                 </button>
                 <button 
                   onClick={() => scrollToSection('about')}
@@ -180,7 +180,7 @@ const Header = () => {
                       : 'text-gray-700 hover:text-orange-500 hover:bg-gray-50 border-l-4 border-transparent hover:border-orange-400'
                   }`}
                 >
-                  ABOUT
+                  เกี่ยวกับเรา
                 </button>
                 <button 
                   onClick={() => scrollToSection('tours')}
@@ -190,7 +190,7 @@ const Header = () => {
                       : 'text-gray-700 hover:text-orange-500 hover:bg-gray-50 border-l-4 border-transparent hover:border-orange-400'
                   }`}
                 >
-                  TOURS
+                  ทัวร์
                 </button>
                 <button 
                   onClick={() => scrollToSection('contact')}
@@ -200,7 +200,7 @@ const Header = () => {
                       : 'text-gray-700 hover:text-orange-500 hover:bg-gray-50 border-l-4 border-transparent hover:border-orange-400'
                   }`}
                 >
-                  CONTACT
+                  ติดต่อเรา
                 </button>
               </nav>
             </div>
