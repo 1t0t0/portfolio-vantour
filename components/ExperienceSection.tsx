@@ -26,7 +26,7 @@ const ExperienceSection = () => {
   ];
 
   // สร้าง Cloudinary URL
-  const logoImageUrl = `https://res.cloudinary.com/${cloudName}/image/upload/v1753507216/logo_uzqrpw.jpg`;
+  const logoImageUrl = `https://res.cloudinary.com/dmt2zysfc/image/upload/v1753507216/logo_uzqrpw.jpg`;
 
   // State สำหรับ animated counters
   const [animatedStats, setAnimatedStats] = useState(stats.map(() => 0));
