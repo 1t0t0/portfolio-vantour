@@ -1,6 +1,7 @@
 // app/page.tsx
 import ContactSection from '@/components/ContactSection';
 import FeaturedToursSection from '@/components/FeaturedToursSection';
+import PackageSection from '@/components/PackageSection';
 import ExperienceSection from '@/components/ExperienceSection';
 import GallerySection from '@/components/GallerySection';
 import TestimonialsSection from '@/components/TestimonialsSection';
@@ -31,7 +32,8 @@ const Home = () => {
         {/* Tours Section */}
         <section id="tours">
           <FeaturedToursSection />
-            <GallerySection />
+          <PackageSection />
+          <GallerySection />
           <TestimonialsSection />
         </section>
         
