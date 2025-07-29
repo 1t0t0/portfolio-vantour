@@ -142,7 +142,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <span className="font-medium text-gray-900 font-prompt">อีเมล :</span>
-                  <p className="text-gray-600 font-sarabun">lambocarrental@mail.com</p>
+                  <p className="text-gray-600 font-sarabun">mrlambossp@gmail.com</p>
                 </div>
               </div>
               
