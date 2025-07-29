@@ -1,6 +1,6 @@
 // components/PackageDetailModal.tsx
 'use client';
-import { Banknote, Calendar, CheckCircle, Clock, MapPin } from 'lucide-react';
+import { Banknote, BookText, Calendar, CheckCircle, Clock, MapPin } from 'lucide-react';
 import Image from 'next/image';
 
 interface PackageDetailModalProps {
@@ -44,8 +44,9 @@ const PackageDetailModal = ({ package: selectedPackage, isOpen, onClose, onConta
             />
             <div className="absolute inset-0 bg-black/40 rounded-t-2xl"></div>
             <div className="absolute bottom-6 left-6 text-white">
+              
               <h2 className="text-3xl lg:text-4xl font-bold font-prompt mb-2">
-                📋 {selectedPackage.name}
+                 {selectedPackage.name}
               </h2>
               <p className="text-lg font-sarabun">{selectedPackage.duration}</p>
             </div>
