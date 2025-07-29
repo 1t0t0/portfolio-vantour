@@ -1,5 +1,6 @@
 // components/PackageDetailModal.tsx
 'use client';
+import { Banknote, Calendar, CheckCircle, Clock, MapPin } from 'lucide-react';
 import Image from 'next/image';
 
 interface PackageDetailModalProps {
@@ -54,56 +55,82 @@ const PackageDetailModal = ({ package: selectedPackage, isOpen, onClose, onConta
           <div className="p-6 lg:p-8">
             {/* Detailed Itinerary */}
             <div className="mb-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 font-prompt">📅 รายการเที่ยวโดยละเอียด</h3>
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-gradient-to-r from-orange-400 to-pink-500 rounded-full flex items-center justify-center mr-4">
+                  <Calendar className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 font-prompt">รายการเที่ยวโดยละเอียด</h3>
+              </div>
               
               {selectedPackage.detailItinerary.day1 && (
                 <div className="space-y-6">
                   {/* Day 1 */}
-                  <div className="bg-orange-50 rounded-lg p-4">
-                    <h4 className="font-bold text-orange-800 mb-3 font-prompt text-lg">
-                      {selectedPackage.detailItinerary.day1.title}
-                    </h4>
-                    <ul className="space-y-2">
+                  <div className="bg-gradient-to-r from-orange-50 to-orange-100 rounded-xl p-5 border-l-4 border-orange-400 shadow-sm">
+                    <div className="flex items-center mb-4">
+                      <div className="w-8 h-8 bg-orange-400 rounded-full flex items-center justify-center mr-3">
+                        <span className="text-white font-bold text-sm">1</span>
+                      </div>
+                      <h4 className="font-bold text-orange-800 font-prompt text-lg">
+                        {selectedPackage.detailItinerary.day1.title}
+                      </h4>
+                    </div>
+                    <div className="grid gap-3">
                       {selectedPackage.detailItinerary.day1.activities.map((activity: string, index: number) => (
-                        <li key={index} className="flex items-start text-sm font-sarabun">
-                          <span className="text-orange-500 mr-2 mt-1">•</span>
-                          <span>{activity}</span>
-                        </li>
+                        <div key={index} className="flex items-start bg-white/70 rounded-lg p-3 hover:bg-white/90 transition-colors">
+                          <div className="w-6 h-6 bg-orange-200 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                            <CheckCircle className="w-3 h-3 text-orange-600" />
+                          </div>
+                          <span className="text-sm font-sarabun text-gray-700 leading-relaxed">{activity}</span>
+                        </div>
                       ))}
-                    </ul>
+                    </div>
                   </div>
 
                   {/* Day 2 */}
                   {selectedPackage.detailItinerary.day2 && (
-                    <div className="bg-blue-50 rounded-lg p-4">
-                      <h4 className="font-bold text-blue-800 mb-3 font-prompt text-lg">
-                        {selectedPackage.detailItinerary.day2.title}
-                      </h4>
-                      <ul className="space-y-2">
+                    <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl p-5 border-l-4 border-blue-400 shadow-sm">
+                      <div className="flex items-center mb-4">
+                        <div className="w-8 h-8 bg-blue-400 rounded-full flex items-center justify-center mr-3">
+                          <span className="text-white font-bold text-sm">2</span>
+                        </div>
+                        <h4 className="font-bold text-blue-800 font-prompt text-lg">
+                          {selectedPackage.detailItinerary.day2.title}
+                        </h4>
+                      </div>
+                      <div className="grid gap-3">
                         {selectedPackage.detailItinerary.day2.activities.map((activity: string, index: number) => (
-                          <li key={index} className="flex items-start text-sm font-sarabun">
-                            <span className="text-blue-500 mr-2 mt-1">•</span>
-                            <span>{activity}</span>
-                          </li>
+                          <div key={index} className="flex items-start bg-white/70 rounded-lg p-3 hover:bg-white/90 transition-colors">
+                            <div className="w-6 h-6 bg-blue-200 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                              <CheckCircle className="w-3 h-3 text-blue-600" />
+                            </div>
+                            <span className="text-sm font-sarabun text-gray-700 leading-relaxed">{activity}</span>
+                          </div>
                         ))}
-                      </ul>
+                      </div>
                     </div>
                   )}
 
                   {/* Day 3 */}
                   {selectedPackage.detailItinerary.day3 && (
-                    <div className="bg-green-50 rounded-lg p-4">
-                      <h4 className="font-bold text-green-800 mb-3 font-prompt text-lg">
-                        {selectedPackage.detailItinerary.day3.title}
-                      </h4>
-                      <ul className="space-y-2">
+                    <div className="bg-gradient-to-r from-green-50 to-green-100 rounded-xl p-5 border-l-4 border-green-400 shadow-sm">
+                      <div className="flex items-center mb-4">
+                        <div className="w-8 h-8 bg-green-400 rounded-full flex items-center justify-center mr-3">
+                          <span className="text-white font-bold text-sm">3</span>
+                        </div>
+                        <h4 className="font-bold text-green-800 font-prompt text-lg">
+                          {selectedPackage.detailItinerary.day3.title}
+                        </h4>
+                      </div>
+                      <div className="grid gap-3">
                         {selectedPackage.detailItinerary.day3.activities.map((activity: string, index: number) => (
-                          <li key={index} className="flex items-start text-sm font-sarabun">
-                            <span className="text-green-500 mr-2 mt-1">•</span>
-                            <span>{activity}</span>
-                          </li>
+                          <div key={index} className="flex items-start bg-white/70 rounded-lg p-3 hover:bg-white/90 transition-colors">
+                            <div className="w-6 h-6 bg-green-200 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                              <CheckCircle className="w-3 h-3 text-green-600" />
+                            </div>
+                            <span className="text-sm font-sarabun text-gray-700 leading-relaxed">{activity}</span>
+                          </div>
                         ))}
-                      </ul>
+                      </div>
                     </div>
                   )}
                 </div>
@@ -112,20 +139,32 @@ const PackageDetailModal = ({ package: selectedPackage, isOpen, onClose, onConta
               {/* For packages without day-by-day structure */}
               {selectedPackage.detailItinerary.overview && (
                 <div className="space-y-4">
-                  <div className="bg-purple-50 rounded-lg p-4">
-                    <h4 className="font-bold text-purple-800 mb-2 font-prompt text-lg">
-                      📍 {selectedPackage.detailItinerary.overview}
-                    </h4>
-                    <p className="text-purple-700 font-sarabun">
-                      {selectedPackage.detailItinerary.duration}
-                    </p>
-                    <p className="text-purple-600 font-sarabun text-sm mt-2">
-                      {selectedPackage.detailItinerary.priceInfo}
-                    </p>
+                  <div className="bg-gradient-to-r from-purple-50 to-purple-100 rounded-xl p-5 border-l-4 border-purple-400 shadow-sm">
+                    <div className="flex items-center mb-3">
+                      <MapPin className="w-6 h-6 text-purple-600 mr-3" />
+                      <h4 className="font-bold text-purple-800 font-prompt text-lg">
+                        {selectedPackage.detailItinerary.overview}
+                      </h4>
+                    </div>
+                    <div className="bg-white/70 rounded-lg p-4 space-y-2">
+                      <div className="flex items-center">
+                        <Clock className="w-4 h-4 text-purple-600 mr-2" />
+                        <p className="text-purple-700 font-sarabun font-medium">
+                          {selectedPackage.detailItinerary.duration}
+                        </p>
+                      </div>
+                      <div className="flex items-center">
+                        <Banknote className="w-4 h-4 text-purple-600 mr-2" />
+                        <p className="text-purple-600 font-sarabun text-sm">
+                          {selectedPackage.detailItinerary.priceInfo}
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               )}
             </div>
+      
 
             {/* Includes Section */}
             <div className="mb-8">
