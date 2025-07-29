@@ -1,5 +1,6 @@
 // components/Header.tsx
 'use client';
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
 const Header = () => {
@@ -58,12 +59,23 @@ const Header = () => {
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
             <div className="flex items-center">
-              <div className="text-xl md:text-2xl font-bold cursor-pointer text-thai-title" onClick={() => scrollToSection('home')}>
-                <span className="text-gray-800 font-prompt">
-                  <span className='text-orange-400'>LAMBO</span> 
-                  <span className="hidden sm:inline"> CAR RENTAL</span>
-                  <span className="sm:hidden"> RENTAL</span>
-                </span>
+              <div className="flex items-center space-x-2 cursor-pointer" onClick={() => scrollToSection('home')}>
+                <div className="w-10 h-10 md:w-15 md:h-15 -ml-4 rounded-full overflow-hidden border-2 border-orange-400">
+                  <Image
+                    src="https://res.cloudinary.com/dmt2zysfc/image/upload/v1753507216/logo_uzqrpw.jpg"
+                    alt="Lambo Car Rental Logo"
+                    width={48}
+                    height={48}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="text-xl md:text-2xl font-bold text-thai-title">
+                  <span className="text-gray-800 font-prompt">
+                    <span className='text-orange-400'>LAMBO</span> 
+                    <span className="hidden sm:inline"> CAR RENTAL</span>
+                    <span className="sm:hidden"> RENTAL</span>
+                  </span>
+                </div>
               </div>
             </div>
 

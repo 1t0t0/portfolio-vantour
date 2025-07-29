@@ -94,10 +94,15 @@ const GallerySection = () => {
     }
   ];
 
-  // Duplicate images for seamless infinite scroll
-  const duplicatedImages = [...galleryImages, ...galleryImages];
+// Split images into two different sets for variety
+  const firstRowImages = galleryImages.slice(0, 9); // First 9 images
+  const secondRowImages = galleryImages.slice(8, 17); // Images 9-17 for second row
+  
+  // Duplicate each set for seamless infinite scroll
+  const duplicatedFirstRow = [...firstRowImages, ...firstRowImages];
+  const duplicatedSecondRow = [...secondRowImages, ...secondRowImages];
 
-  return (
+ return (
     <section className="py-24 lg:py-25 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
@@ -110,12 +115,12 @@ const GallerySection = () => {
           </h2>
         </div>
 
-        {/* Infinite Scrolling Carousel */}
+        {/* First Row - Infinite Scrolling Carousel */}
         <div className="relative overflow-hidden">
           <motion.div
             className="flex gap-6"
             animate={{
-              x: [0, -100 * galleryImages.length],
+              x: [0, -100 * firstRowImages.length],
             }}
             transition={{
               x: {
@@ -126,12 +131,12 @@ const GallerySection = () => {
               },
             }}
             style={{
-              width: `${duplicatedImages.length * 400}px`,
+              width: `${duplicatedFirstRow.length * 400}px`,
             }}
           >
-            {duplicatedImages.map((image, index) => (
+            {duplicatedFirstRow.map((image, index) => (
               <motion.div
-                key={`${image.id}-${index}`}
+                key={`first-${image.id}-${index}`}
                 className="flex-shrink-0 w-80 h-60 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
@@ -148,12 +153,12 @@ const GallerySection = () => {
           </motion.div>
         </div>
 
-        {/* Second Row - Reverse Direction */}
+        {/* Second Row - Reverse Direction with Different Images */}
         <div className="relative overflow-hidden mt-8">
           <motion.div
             className="flex gap-6"
             animate={{
-              x: [-100 * galleryImages.length, 0],
+              x: [-100 * secondRowImages.length, 0],
             }}
             transition={{
               x: {
@@ -164,12 +169,12 @@ const GallerySection = () => {
               },
             }}
             style={{
-              width: `${duplicatedImages.length * 400}px`,
+              width: `${duplicatedSecondRow.length * 400}px`,
             }}
           >
-            {duplicatedImages.map((image, index) => (
+            {duplicatedSecondRow.map((image, index) => (
               <motion.div
-                key={`reverse-${image.id}-${index}`}
+                key={`second-${image.id}-${index}`}
                 className="flex-shrink-0 w-80 h-60 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}

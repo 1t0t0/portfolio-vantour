@@ -11,7 +11,7 @@ const HeroSection = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
               <div className="flex items-center justify-center bg-orange-100 text-orange-800 px-3 py-2 rounded-full text-xs sm:text-sm font-medium w-full sm:w-auto">
                 <span className="text-base sm:text-lg lg:text-2xl flex items-center font-prompt font-medium text-center">
-                  เตรียมตัวออกเดินทางได้
+                  บริษัทรถเช่าแรมโบ้
                 </span>
               </div>
 
