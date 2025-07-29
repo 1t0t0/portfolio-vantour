@@ -58,9 +58,9 @@ const Header = () => {
         <div className="max-w-4xl mx-auto bg-white/90 backdrop-blur-md rounded-full shadow-lg border border-gray-200/50 px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
-            <div className="flex items-center">
+           <div className="flex items-center">
               <div className="flex items-center space-x-2 cursor-pointer" onClick={() => scrollToSection('home')}>
-                <div className="w-10 h-10 md:w-15 md:h-15 -ml-4 rounded-full overflow-hidden border-2 border-orange-400">
+                <div className="w-10 h-10 md:w-15 md:h-15 md:-ml-4 rounded-full overflow-hidden border-2 border-orange-400">
                   <Image
                     src="https://res.cloudinary.com/dmt2zysfc/image/upload/v1753507216/logo_uzqrpw.jpg"
                     alt="Lambo Car Rental Logo"
