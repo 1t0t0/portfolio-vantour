@@ -73,16 +73,31 @@ const PackagesSection = () => {
             </p>
           </div>
 
-          {/* Packages Grid */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {packagesData.map((pkg) => (
-              <PackageCard
-                key={pkg.id}
-                package={pkg}
-                onDetailClick={() => openDetailModal(pkg)}
-                onContactClick={() => openContactModal(pkg.name)}
-              />
-            ))}
+          {/* Packages Grid - 3 columns 2 rows layout */}
+          <div className="space-y-8">
+            {/* First Row - 3 packages */}
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {packagesData.slice(0, 3).map((pkg) => (
+                <PackageCard
+                  key={pkg.id}
+                  package={pkg}
+                  onDetailClick={() => openDetailModal(pkg)}
+                  onContactClick={() => openContactModal(pkg.name)}
+                />
+              ))}
+            </div>
+            
+            {/* Second Row - 2 packages centered */}
+            <div className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
+              {packagesData.slice(3, 5).map((pkg) => (
+                <PackageCard
+                  key={pkg.id}
+                  package={pkg}
+                  onDetailClick={() => openDetailModal(pkg)}
+                  onContactClick={() => openContactModal(pkg.name)}
+                />
+              ))}
+            </div>
           </div>
 
         </div>

@@ -6,10 +6,9 @@ import { galleryImages } from '@/data/galleryData';
 
 const GallerySection = () => {
   // Split images into two different sets for variety
-  const firstRowImages = galleryImages.slice(0, 13); // First 9 images
-  const secondRowImages = galleryImages.slice(14, 27); // Images 9-17 for second row
+  const firstRowImages = galleryImages.slice(0, 13); 
+  const secondRowImages = galleryImages.slice(14, 27); 
   
-  // Duplicate each set for seamless infinite scroll
   const duplicatedFirstRow = [...firstRowImages, ...firstRowImages];
   const duplicatedSecondRow = [...secondRowImages, ...secondRowImages];
 
