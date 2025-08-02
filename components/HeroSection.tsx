@@ -44,7 +44,7 @@ const HeroSection = () => {
               <div className="relative -top-3 sm:-top-6 h-60 sm:h-80 rounded-xl sm:rounded-2xl overflow-hidden border-2 border-yellow-500 group cursor-pointer">
                 <div className="w-full h-full relative overflow-hidden">
                   <Image 
-                    src="https://cdn.pixabay.com/photo/2016/01/09/18/27/journey-1130732_1280.jpg" 
+                    src="https://res.cloudinary.com/dmt2zysfc/image/upload/v1753780256/LINE_ALBUM_%E0%BB%9D%E0%BB%89%E0%BA%B2%E0%BB%81%E0%BA%A5%E0%BA%81_250729_3_sbwrpt.jpg" 
                     alt="Travel destination - Mountain landscape"
                     fill
                     className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
@@ -56,7 +56,7 @@ const HeroSection = () => {
               <div className="relative h-60 sm:h-80 rounded-xl sm:rounded-2xl overflow-hidden border-2 border-yellow-500 group cursor-pointer">
                 <div className="w-full h-full relative overflow-hidden">
                   <Image 
-                    src="https://cdn.pixabay.com/photo/2017/12/15/13/51/polynesia-3021072_1280.jpg" 
+                    src="https://res.cloudinary.com/dmt2zysfc/image/upload/v1753780257/LINE_ALBUM_%E0%BB%9D%E0%BB%89%E0%BA%B2%E0%BB%81%E0%BA%A5%E0%BA%81_250729_2_jq6jcn.jpg" 
                     alt="Travel destination - Tropical beach"
                     fill
                     className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
@@ -68,7 +68,7 @@ const HeroSection = () => {
               <div className="relative -bottom-3 sm:-bottom-6 h-60 sm:h-80 rounded-xl sm:rounded-2xl overflow-hidden border-2 border-yellow-500 group cursor-pointer">
                 <div className="w-full h-full relative overflow-hidden">
                   <Image 
-                    src="https://cdn.pixabay.com/photo/2016/11/08/05/26/woman-1807533_1280.jpg" 
+                    src="https://res.cloudinary.com/dmt2zysfc/image/upload/v1753780255/LINE_ALBUM_%E0%BB%9D%E0%BB%89%E0%BA%B2%E0%BB%81%E0%BA%A5%E0%BA%81_250729_1_euqgkb.jpg" 
                     alt="Travel destination - City exploration"
                     fill
                     className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
