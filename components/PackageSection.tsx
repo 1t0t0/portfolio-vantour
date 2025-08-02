@@ -288,7 +288,7 @@ const PackageCard = ({ package: pkg, onDetailClick, onContactClick }: PackageCar
           className={`w-full py-2 px-3 rounded-lg font-medium transition-all duration-300 text-sm font-prompt flex items-center justify-center gap-2 ${
             pkg.popular 
               ? 'bg-orange-400 hover:bg-orange-500 text-white shadow-md hover:shadow-lg' 
-              : 'bg-gray-100 hover:bg-orange-400 text-gray-800 hover:text-white'
+              : 'bg-orange-400 hover:bg-orange-500 text-white hover:text-white'
           }`}
         >
           <MessageCircle className="w-4 h-4" />
