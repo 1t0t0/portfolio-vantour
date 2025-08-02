@@ -1,4 +1,4 @@
-// components/PackagesSection.tsx
+// components/PackageSection.tsx
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
@@ -73,33 +73,18 @@ const PackagesSection = () => {
             </p>
           </div>
 
-          {/* Packages Grid - 3 columns 2 rows layout */}
-          <div className="space-y-8">
-            {/* First Row - 3 packages */}
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {packagesData.slice(0, 3).map((pkg) => (
+          {/* Packages Grid - 1 row 3 columns */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-3 gap-8">
+            {packagesData.map((pkg) => (
+              <div key={pkg.id} className="min-w-0 w-full">
                 <PackageCard
-                  key={pkg.id}
                   package={pkg}
                   onDetailClick={() => openDetailModal(pkg)}
                   onContactClick={() => openContactModal(pkg.name)}
                 />
-              ))}
-            </div>
-            
-            {/* Second Row - 2 packages centered */}
-            <div className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
-              {packagesData.slice(3, 5).map((pkg) => (
-                <PackageCard
-                  key={pkg.id}
-                  package={pkg}
-                  onDetailClick={() => openDetailModal(pkg)}
-                  onContactClick={() => openContactModal(pkg.name)}
-                />
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
-
         </div>
       </section>
 
@@ -209,7 +194,7 @@ interface PackageCardProps {
 
 const PackageCard = ({ package: pkg, onDetailClick, onContactClick }: PackageCardProps) => (
   <div 
-    className={`relative bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group ${
+    className={`relative bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group w-full ${
       pkg.popular ? 'ring-2 ring-orange-400 transform hover:scale-105' : 'hover:scale-105'
     }`}
   >
