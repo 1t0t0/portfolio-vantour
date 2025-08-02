@@ -97,7 +97,7 @@ export const packagesData: PackageData[] = [
     name: "ลาวใต้ (ปากเซ-จำปาศักดิ์)",
     duration: "3 วัน 2 คืน",
     description: "สำรวจความงามของลาวใต้ น้ำตกสวยงาม และวัฒนธรรมท้องถิ่น",
-    image: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1753519010/LINE_ALBUM_%E0%BA%AE%E0%BA%B9%E0%BA%9A%E0%BA%88%E0%BA%B2%E0%BA%81_%E0%BA%A5%E0%BA%B9%E0%BA%81%E0%BA%84%E0%BB%89%E0%BA%B2%E0%BA%97%E0%BA%B5%E0%BB%88%E0%BB%80%E0%BA%84%E0%BA%B5%E0%BA%8D%E0%BA%A1%E0%BA%B2%E0%BB%83%E0%BA%8A%E0%BB%89%E0%BA%9A%E0%BB%8D%E0%BA%A5%E0%BA%B4%E0%BA%81%E0%BA%B2%E0%BA%99_Gallery_250726_8_lg0aan.jpg",
+    image: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1754114900/LINE_ALBUM_%E0%BA%A5%E0%BA%B2%E0%BA%A7%E0%BB%83%E0%BA%95%E0%BB%89_250802_8_vh4ou6.jpg",
     price: "3,290-6,550",
     highlights: [
       "• ตาดฟาน ซิปไลน์",
@@ -159,7 +159,7 @@ export const packagesData: PackageData[] = [
     name: "ลาว 4 เมือง Premium",
     duration: "4 วัน 3 คืน",
     description: "เวียงจันทน์-เฟือง-วังเวียง-หลวงพระบาง แพคเกจครบครัน",
-    image: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1753608035/LINE_ALBUM_%E0%BB%81%E0%BA%AB%E0%BA%BC%E0%BB%88%E0%BA%87%E0%BA%97%E0%BA%BB%E0%BB%88%E0%BA%A7_%E0%BB%80%E0%BA%A1%E0%BA%B7%E0%BA%AD%E0%BA%87%E0%BB%80%E0%BA%9F%E0%BA%B7%E0%BA%AD%E0%BA%87_Meung_feung_250727_9_rjo1am.jpg",
+    image: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1753607188/LINE_ALBUM_%E0%BB%81%E0%BA%AB%E0%BA%BC%E0%BB%88%E0%BA%87%E0%BA%97%E0%BB%88%E0%BA%AD%E0%BA%87%E0%BA%97%E0%BB%88%E0%BA%BD%E0%BA%A7_%E0%BA%99%E0%BA%B0%E0%BA%84%E0%BA%AD%E0%BA%99%E0%BA%AB%E0%BA%A5%E0%BA%A7%E0%BA%87%E0%BA%A7%E0%BA%BD%E0%BA%87%E0%BA%88%E0%BA%B1%E0%BA%99_Vientiane_250727_8_baoy0s.jpg",
     price: "7,900",
     highlights: [
       "• ครบทั้ง 4 เมืองสำคัญ",
@@ -190,7 +190,7 @@ export const packagesData: PackageData[] = [
     name: "เวียงจันทน์-หลวงพระบาง Express",
     duration: "2 วัน 1 คืน",
     description: "ทัวร์แบบเร่งด่วน 2 เมืองหลัก พร้อมรถไฟความเร็วสูง",
-    image: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1753609437/LINE_ALBUM_%E0%BB%81%E0%BA%AB%E0%BA%BC%E0%BB%88%E0%BA%87%E0%BA%97%E0%BB%88%E0%BA%AD%E0%BA%87%E0%BA%97%E0%BB%88%E0%BA%A7_%E0%BA%AB%E0%BA%BC%E0%BA%A7%E0%BA%87%E0%BA%9E%E0%BA%B0%E0%BA%9A%E0%BA%B2%E0%BA%87_Luangprabang_250727_10_wqpcts.jpg",
+    image: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1753609435/LINE_ALBUM_%E0%BB%81%E0%BA%AB%E0%BA%BC%E0%BB%88%E0%BA%87%E0%BA%97%E0%BB%88%E0%BA%AD%E0%BA%87%E0%BA%97%E0%BA%BB%E0%BB%88%E0%BA%A7_%E0%BA%AB%E0%BA%BC%E0%BA%A7%E0%BA%87%E0%BA%9E%E0%BA%B0%E0%BA%9A%E0%BA%B2%E0%BA%87_Luangprabang_250727_9_r5cnpj.jpg",
     price: "6,599",
     highlights: [
       "• ตาดกวางชี แก้วมงคล",

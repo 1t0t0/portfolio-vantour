@@ -90,8 +90,7 @@ export const galleryImages: GalleryImage[] = [
     id: 17,
     src: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1753519012/LINE_ALBUM_%E0%BA%AE%E0%BA%B9%E0%BA%9A%E0%BA%88%E0%BA%B2%E0%BA%81_%E0%BA%A5%E0%BA%B9%E0%BA%81%E0%BA%84%E0%BB%89%E0%BA%B2%E0%BA%97%E0%BA%B5%E0%BB%88%E0%BB%80%E0%BA%84%E0%BA%B5%E0%BA%8D%E0%BA%A1%E0%BA%B2%E0%BB%83%E0%BA%8A%E0%BB%89%E0%BA%9A%E0%BB%8D%E0%BA%A5%E0%BA%B4%E0%BA%81%E0%BA%B2%E0%BA%99_Gallery_250726_17_jh71ni.jpg",
     alt: "Scenic travel photography"
-  }
-  ,
+  },
   {
     id: 18,
     src: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1753780257/LINE_ALBUM_%E0%BB%9D%E0%BB%89%E0%BA%B2%E0%BB%81%E0%BA%A5%E0%BA%81_250729_2_jq6jcn.jpg",
@@ -108,40 +107,64 @@ export const galleryImages: GalleryImage[] = [
     alt: "Scenic travel photography"
   },
   {
-    id: 22,
+    id: 21,
     src: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1753780225/LINE_ALBUM_29768_250729_15_kyswvx.jpg",
     alt: "Scenic travel photography"
   },
   {
-    id: 23,
+    id: 22,
     src: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1753780225/LINE_ALBUM_29768_250729_7_m02q6q.jpg",
     alt: "Scenic travel photography"
   },
   {
-    id: 24,
+    id: 23,
     src: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1753780225/LINE_ALBUM_29768_250729_10_tos1zy.jpg",
     alt: "Scenic travel photography"
   },
   {
-    id: 25,
+    id: 24,
     src: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1753780225/LINE_ALBUM_29768_250729_8_bslrmc.jpg",
     alt: "Scenic travel photography"
   },
   {
+    id: 25,
+    src: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1753780224/LINE_ALBUM_29768_250729_14_xjwuue.jpg",
+    alt: "Scenic travel photography"
+  },
+  {
     id: 26,
-    src: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1753780224/LINE_ALBUM_29768_250729_14_xjwuue.jpg",
-    alt: "Scenic travel photography"
-  },
-  {
-    id: 27,
-    src: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1753780224/LINE_ALBUM_29768_250729_14_xjwuue.jpg",
-    alt: "Scenic travel photography"
-  },
-  {
-    id: 28,
     src: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1753780224/LINE_ALBUM_29768_250729_1_iquppa.jpg",
     alt: "Scenic travel photography"
   },
-  
-  
+  // เพิ่มภาพใหม่
+  {
+    id: 27,
+    src: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1754114900/LINE_ALBUM_%E0%BA%A5%E0%BA%B2%E0%BA%A7%E0%BB%83%E0%BA%95%E0%BB%89_250802_10_njyqgy.jpg",
+    alt: "ลาวใต้ ภาพท่องเที่ยว"
+  },
+  {
+    id: 28,
+    src: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1754114900/LINE_ALBUM_%E0%BA%A5%E0%BA%B2%E0%BA%A7%E0%BB%83%E0%BA%95%E0%BB%89_250802_8_vh4ou6.jpg",
+    alt: "ลาวใต้ ภาพท่องเที่ยว"
+  },
+  {
+    id: 29,
+    src: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1754114900/LINE_ALBUM_%E0%BA%A5%E0%BA%B2%E0%BA%A7%E0%BB%83%E0%BA%95%E0%BB%89_250802_11_fvuyl6.jpg",
+    alt: "ลาวใต้ ภาพท่องเที่ยว"
+  },
+  {
+    id: 30,
+    src: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1754114899/LINE_ALBUM_%E0%BA%A5%E0%BA%B2%E0%BA%A7%E0%BB%83%E0%BA%95%E0%BB%89_250802_2_q4l5kp.jpg",
+    alt: "ลาวใต้ ภาพท่องเที่ยว"
+  },
+  {
+    id: 31,
+    src: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1754114899/LINE_ALBUM_%E0%BA%A5%E0%BA%B2%E0%BA%A7%E0%BB%83%E0%BA%95%E0%BB%89_250802_1_w0tqcc.jpg",
+    alt: "ลาวใต้ ภาพท่องเที่ยว"
+  },
+  {
+    id: 32,
+    src: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1754114900/LINE_ALBUM_%E0%BA%A5%E0%BA%B2%E0%BA%A7%E0%BB%83%E0%BA%95%E0%BB%89_250802_7_bpgevb.jpg",
+    alt: "ลาวใต้ ภาพท่องเที่ยว"
+  }
 ];

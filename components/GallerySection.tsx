@@ -6,8 +6,8 @@ import { galleryImages } from '@/data/galleryData';
 
 const GallerySection = () => {
   // Split images into two different sets for variety
-  const firstRowImages = galleryImages.slice(0, 13); 
-  const secondRowImages = galleryImages.slice(14, 27); 
+  const firstRowImages = galleryImages.slice(0, 15); 
+  const secondRowImages = galleryImages.slice(16, 31); 
   
   const duplicatedFirstRow = [...firstRowImages, ...firstRowImages];
   const duplicatedSecondRow = [...secondRowImages, ...secondRowImages];

@@ -93,9 +93,9 @@ const FeaturedToursSection = () => {
     },
     {
       id: 4,
-      destination: "เมืองไชสมบูรณ์",
-      country: "ลาว",
-      image: "https://th.readme.me/f/46497/cover.jpg",
+      destination: "ปากเซ-จำปาศักดิ์",
+      country: "ลาวใต้",
+      image: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1754114899/LINE_ALBUM_%E0%BA%A5%E0%BA%B2%E0%BA%A7%E0%BB%83%E0%BA%95%E0%BB%89_250802_6_zouqao.jpg",
       duration: "2-3 วัน",
       description: "เมืองเก่าแก่ที่เต็มไปด้วยเรื่องราวทางประวัติศาสตร์ และสถาปัตยกรรมแบบดั้งเดิม",
       highlights: [
@@ -106,10 +106,12 @@ const FeaturedToursSection = () => {
         "หมู่บ้านหัตถกรรม"
       ],
       additionalImages: [
-        "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=600&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1568454537842-d933259bb258?w=600&h=400&fit=crop"
+        "https://res.cloudinary.com/dmt2zysfc/image/upload/v1754114900/LINE_ALBUM_%E0%BA%A5%E0%BA%B2%E0%BA%A7%E0%BB%83%E0%BA%95%E0%BB%89_250802_10_njyqgy.jpg",
+        "https://res.cloudinary.com/dmt2zysfc/image/upload/v1754114900/LINE_ALBUM_%E0%BA%A5%E0%BA%B2%E0%BA%A7%E0%BB%83%E0%BA%95%E0%BB%89_250802_8_vh4ou6.jpg",
+        "https://res.cloudinary.com/dmt2zysfc/image/upload/v1754114900/LINE_ALBUM_%E0%BA%A5%E0%BA%B2%E0%BA%A7%E0%BB%83%E0%BA%95%E0%BB%89_250802_11_fvuyl6.jpg",
+        "https://res.cloudinary.com/dmt2zysfc/image/upload/v1754114899/LINE_ALBUM_%E0%BA%A5%E0%BA%B2%E0%BA%A7%E0%BB%83%E0%BA%95%E0%BB%89_250802_2_q4l5kp.jpg",
+        "https://res.cloudinary.com/dmt2zysfc/image/upload/v1754114899/LINE_ALBUM_%E0%BA%A5%E0%BA%B2%E0%BA%A7%E0%BB%83%E0%BA%95%E0%BB%89_250802_1_w0tqcc.jpg",
+        "https://res.cloudinary.com/dmt2zysfc/image/upload/v1754114900/LINE_ALBUM_%E0%BA%A5%E0%BA%B2%E0%BA%A7%E0%BB%83%E0%BA%95%E0%BB%89_250802_7_bpgevb.jpg"
       ],
       price: "2,200-3,200 บาท/คน",
       includes: ["รถรับ-ส่ง", "ไกด์ประวัติศาสตร์", "ค่าเข้าชมพิพิธภัณฑ์", "อาหารท้องถิ่น"]
