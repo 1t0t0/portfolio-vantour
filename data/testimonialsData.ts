@@ -40,7 +40,7 @@ export const testimonialsData: TestimonialData[] = [
     id: 5,
     name: "คุณธีรวัต",
     role: "เดินทางคนเดียว",
-    image: "data:image/svg+xml;charset=utf-8,%3Csvg width='120' height='120' viewBox='0 0 120 120' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='120' height='120' rx='60' fill='%2556F1'/%3E%3Ctext x='60' y='78' text-anchor='middle' fill='white' font-family='Arial, sans-serif' font-size='55' font-weight='bold'%3Eธ%3C/text%3E%3C/svg%3E",
+    image: "data:image/svg+xml;charset=utf-8,%3Csvg width='120' height='120' viewBox='0 0 120 120' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='120' height='120' rx='60' fill='%236366F1'/%3E%3Ctext x='60' y='78' text-anchor='middle' fill='white' font-family='Arial, sans-serif' font-size='55' font-weight='bold'%3Eธ%3C/text%3E%3C/svg%3E",
     testimonial: "ไปคนเดียวก็ไม่เหงา ไกด์พูดคุยดี พาไปที่เที่ยวเด็ดๆ ถ่ายรูปให้สวย ปลอดภัยดี ราคาสมเหตุสมผล จะไปใหม่ปีหน้า"
   },
   {
