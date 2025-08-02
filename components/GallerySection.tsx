@@ -18,10 +18,10 @@ const GallerySection = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-block bg-orange-400 text-white px-4 py-2 rounded-full text-sm font-medium mb-4">
-            Gallery
+            แกลเลอรี่
           </div>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 font-prompt">
-            Visit our customers tour gallery
+เยี่ยมชมแกลเลอรีทัวร์ของลูกค้าของเรา
           </h2>
         </div>
 
