@@ -58,8 +58,8 @@ const PackagesSection = () => {
 
   return (
     <>
-      <section className="py-12 lg:py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-12 lg:py-16 bg-white">
+        <div className="max-w-[2000px] mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
           <div className="text-center mb-12">
             <div className="inline-block bg-orange-400 text-white px-4 py-2 rounded-full text-sm font-medium mb-4 font-prompt">
@@ -73,16 +73,15 @@ const PackagesSection = () => {
             </p>
           </div>
 
-          {/* Packages Grid - 1 row 3 columns */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-3 gap-8">
+          {/* Packages Grid - 1 row 5 columns */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8">
             {packagesData.map((pkg) => (
-              <div key={pkg.id} className="min-w-0 w-full">
-                <PackageCard
-                  package={pkg}
-                  onDetailClick={() => openDetailModal(pkg)}
-                  onContactClick={() => openContactModal(pkg.name)}
-                />
-              </div>
+              <PackageCard
+                key={pkg.id}
+                package={pkg}
+                onDetailClick={() => openDetailModal(pkg)}
+                onContactClick={() => openContactModal(pkg.name)}
+              />
             ))}
           </div>
         </div>
@@ -194,7 +193,7 @@ interface PackageCardProps {
 
 const PackageCard = ({ package: pkg, onDetailClick, onContactClick }: PackageCardProps) => (
   <div 
-    className={`relative bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group w-full ${
+    className={`relative bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group ${
       pkg.popular ? 'ring-2 ring-orange-400 transform hover:scale-105' : 'hover:scale-105'
     }`}
   >
