@@ -53,7 +53,7 @@ const Footer = () => {
               </a>
               
               <a 
-                href="line://ti/p/Lambo_0365?text=สวัสดีครับ%20สนใจสอบถามเรื่องการเช่ารถครับ" 
+                href="https://line.me/ti/p/iuWs58ECx-" 
                 className="w-10 h-10 bg-orange-400 rounded-full flex items-center justify-center text-white hover:bg-orange-500 transition-colors"
               >
                 <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
