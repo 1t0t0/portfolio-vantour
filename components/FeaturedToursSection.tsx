@@ -30,7 +30,7 @@ const FeaturedToursSection = () => {
               สำรวจ
             </div>
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 font-prompt">
-              ทัวร์เด่นของเรา
+              ทัวร์เด่นของเราhttps://line.me/ti/p/iuWs58ECx-
             </h2>
           </div>
 
@@ -283,13 +283,13 @@ const FeaturedToursSection = () => {
 
                     {/* Line */}
                     <a 
-                      href="line://ti/p/Lambo_0365?text=สวัสดีครับ%20สนใจสอบถามเรื่องการเช่ารถครับ"
+                      href="https://line.me/ti/p/iuWs58ECx-"
                       className="flex items-center p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-all duration-300 group"
                     >
                       <div className="w-12 h-12 bg-green-400 rounded-full flex items-center justify-center text-white mr-4 group-hover:scale-110 transition-transform">
                         <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M12 2C6.48 2 2 5.85 2 10.5c0 1.49.53 2.87 1.44 4.03L2 20l5.64-1.22C8.84 19.55 10.37 20 12 20c5.52 0 10-3.85 10-8.5S17.52 2 12 2z"/>
-                          <text x="12" y="13" textAnchor="middle" fontSize="6" fill="white" fontFamily="Arial, sans-serif" fontWeight="bold">LINE</text>
+                          <text x="12" y="13" textAnchor="middle" fontSize="6" fill="green" fontFamily="Arial, sans-serif" fontWeight="bold">LINE</text>
                         </svg>
                       </div>
                       <div>

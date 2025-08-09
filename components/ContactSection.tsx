@@ -31,7 +31,7 @@ const ContactSection = () => {
       ),
       title: "Line",
       description: "แชตกับเราได้โดยตรงผ่านทางไลน์ สดวกง่าย และ ตอบกับได้ทันที่",
-      link: "line://ti/p/Lambo_0365?text=สวัสดีครับ%20สนใจสอบถามเรื่องการเช่ารถครับ"
+      link: "https://line.me/ti/p/iuWs58ECx-"
     }
   ];
 
