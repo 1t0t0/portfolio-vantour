@@ -30,7 +30,7 @@ const FeaturedToursSection = () => {
               สำรวจ
             </div>
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 font-prompt">
-              ทัวร์เด่นของเราhttps://line.me/ti/p/iuWs58ECx-
+              ทัวร์เด่นของเรา
             </h2>
           </div>
 
