@@ -160,7 +160,7 @@ export const packagesData: PackageData[] = [
     duration: "4 วัน 3 คืน",
     description: "เวียงจันทน์-เฟือง-วังเวียง-หลวงพระบาง แพคเกจครบครัน",
     image: "https://res.cloudinary.com/dmt2zysfc/image/upload/v1753607188/LINE_ALBUM_%E0%BB%81%E0%BA%AB%E0%BA%BC%E0%BB%88%E0%BA%87%E0%BA%97%E0%BB%88%E0%BA%AD%E0%BA%87%E0%BA%97%E0%BB%88%E0%BA%BD%E0%BA%A7_%E0%BA%99%E0%BA%B0%E0%BA%84%E0%BA%AD%E0%BA%99%E0%BA%AB%E0%BA%A5%E0%BA%A7%E0%BA%87%E0%BA%A7%E0%BA%BD%E0%BA%87%E0%BA%88%E0%BA%B1%E0%BA%99_Vientiane_250727_8_baoy0s.jpg",
-    price: "7,900",
+    price: "10,999",
     highlights: [
       "• ครบทั้ง 4 เมืองสำคัญ",
       "• รวมอาหารทุกมื้อ",
@@ -172,7 +172,7 @@ export const packagesData: PackageData[] = [
     detailItinerary: {
       overview: "เที่ยวเวียงจันทร์ - เมืองเฟือง - วังเวียง - หลวงพระบาง",
       duration: "4 วัน 3 คืน",
-      priceInfo: "ราคาเริ่มต้น 7,900 บาท/ท่าน (8-10 ท่าน สามารถเลือกวันเดินทางได้เลย)",
+      priceInfo: "ราคาเริ่มต้น 10,999 บาท/ท่าน (8-10 ท่าน สามารถเลือกวันเดินทางได้เลย)",
       includes: [
         "ค่าทำเนียมเอกสารเดินทางเข้าออกไทย-ลาว",
         "ค่าเข้าชมสถานที่ที่ระบุในรายการนำเที่ยว",
